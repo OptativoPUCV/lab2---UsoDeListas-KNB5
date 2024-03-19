@@ -163,12 +163,12 @@ int parentesisBalanceados(char *cadena)
   if (largo % 2 == 1) mitad--;
 
   for (i = 0; i < mitad; i++){
-    if (cadena[i] == '(' || cadena[i] == '{') izq++;
+    if (cadena[i] == '(' || cadena[i] == '{' || cadena[i] == '[') izq++;
     else return 0;
   }
 
   for (i = mitad ; cadena[i] != '\0'; i++){
-    if (cadena[i] == ')' || cadena[i] == '}') der++;
+    if (cadena[i] == ')' || cadena[i] == '}' || cadena[i] == ']') der++;
     else return 0;
   }
   
