@@ -137,7 +137,8 @@ int parentesisBalanceados(char *cadena)
 
   if (largo % 2 == 1) return 0;
 
-  for (i = 0, j = largo - 1; i < j; i++, j--){
+  for (i = 0, j = largo - 1; i < j; i++, j--)
+  {
     switch (cadena[i])
     {
       case '(':
