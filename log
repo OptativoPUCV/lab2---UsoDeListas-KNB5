@@ -279,3 +279,14 @@ Tue 19 Mar 2024 10:32:11 PM UTC:
  tests:  5|1
 total_score: 50/70
 ba9ee73
+Tue 19 Mar 2024 10:35:09 PM UTC: 
+ exercises.c | 11 ++++-------
+ 1 file changed, 4 insertions(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:10: error: unused variable ‘stack’ [-Werror=unused-variable]
+  135 |   Stack* stack = create_stack();
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+09310bc
