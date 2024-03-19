@@ -4,3 +4,14 @@ Tue 19 Mar 2024 02:41:18 PM UTC:
  tests:  1|4
 total_score: 10/70
 0dd38a6
+Tue 19 Mar 2024 02:52:23 PM UTC: 
+ exercises.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+3765196
