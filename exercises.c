@@ -129,10 +129,19 @@ Puedes usar una pila auxiliar.
 void copia_pila(Stack* P1, Stack* P2) 
 {
   int* elemento = (int *)first(P1);
+  int cont = 1;
 
   while(elemento != NULL)
     {
-      pushFront(P2, elemento);
+      if(cont == 1)
+      {
+        pushFront(P2, elemento);
+        cont++;
+      }
+      else
+      {
+        pushBack(P2, elemento);
+      }
       elemento = next(P1);
     }
 }
