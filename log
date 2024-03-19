@@ -198,3 +198,14 @@ exercises.c:158:10: error: unused variable ‘P2’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ceff83d
+Tue 19 Mar 2024 04:46:14 PM UTC: 
+ exercises.c | 47 +----------------------------------------------
+ 1 file changed, 1 insertion(+), 46 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:155:1: error: control reaches end of non-void function [-Werror=return-type]
+  155 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+1383b00
