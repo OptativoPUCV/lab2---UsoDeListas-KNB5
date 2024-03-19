@@ -51,37 +51,6 @@ List* crea_lista()
     *elemento = i;
     pushBack(L, elemento);
   }
-  
-  /*int elemento1 = 1;
-  pushFront(L, &elemento1);
-
-  int elemento2 = 2;
-  pushBack(L, &elemento2);
-
-  int elemento3 = 3;
-  pushFront(L, &elemento3);
-
-  int elemento4 = 4;
-  pushBack(L, &elemento4);
-
-  int elemento5 = 5;
-  pushFront(L, &elemento5);
-
-  int elemento6 = 6;
-  pushBack(L, &elemento6);
-
-  int elemento7 = 7;
-  pushFront(L, &elemento7);
-
-  int elemento8 = 8;
-  pushBack(L, &elemento8);
-
-  int elemento9 = 9;
-  pushFront(L, &elemento9);
-
-  int elemento10 = 10;
-  pushBack(L, &elemento10);*/
-  
   return L;
 }
 
@@ -169,7 +138,8 @@ int parentesisBalanceados(char *cadena)
   if (largo % 2 == 1) return 0;
 
   for (i = 0, j = largo - 1; i < j; i++, j--){
-    switch (cadena[i]){
+    switch (cadena[i])
+    {
       case '(':
         if (cadena[j] != ')') return 0;
         break;
