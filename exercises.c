@@ -126,7 +126,15 @@ El orden de ambas pilas se debe mantener.
 Puedes usar una pila auxiliar.
 */
 
-void copia_pila(Stack* P1, Stack* P2) {
+void copia_pila(Stack* P1, Stack* P2) 
+{
+  int* elemento = (int *)first(P1);
+
+  while(elemento != NULL)
+    {
+      push(P2, elemento);
+      elemento = next(P1);
+    }
 }
 
 /*
