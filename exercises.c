@@ -85,8 +85,15 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) 
 {
-
-  return 0;
+  int suma = 0;
+  int *elemento;
+  elemento = (int*)first(L);
+  while(elemento != NULL)
+    {
+      suma += *(int *)elemento;
+      elemento = next(L);
+    }
+  return suma;
 }
 
 /*
