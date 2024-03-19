@@ -155,7 +155,18 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 
 int parentesisBalanceados(char *cadena) 
 {
+  int i;
+
+  int largo = strlen(cadena);
+
+  for (i = 0; i < (largo / 2); i++){
+    if (cadena[i] != '(' || cadena[i] != '{') return 0;
+  }
+
+  for (i = (largo / 2) ; cadena[i] != '\0'; i++){
+    if (cadena[i] != ')' || cadena[i] != '}') return 0;
+  }
   
   
-  return 0;
+  return 1;
 }
