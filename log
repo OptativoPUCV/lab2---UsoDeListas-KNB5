@@ -24,3 +24,20 @@ exercises.c:96:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 b1a71e4
+Tue 19 Mar 2024 02:53:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c:88:3: error: "/*" within comment [-Werror=comment]
+   88 |   /*int suma = 0;
+      |    
+exercises.c:96:1: error: expected identifier or ‘(’ before ‘}’ token
+   96 | }
+      | ^
+test.c: In function ‘test_suma_lista’:
+test.c:100:17: error: implicit declaration of function ‘sumaLista’ [-Werror=implicit-function-declaration]
+  100 |     int suma2 = sumaLista(L);
+      |                 ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+02b6493
