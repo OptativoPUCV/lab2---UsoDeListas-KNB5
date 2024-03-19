@@ -153,7 +153,13 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 0 en caso contrario.
 */
 
-int parentesisBalanceados(char *cadena) {
-   return 0;
+int parentesisBalanceados(char *cadena) 
+{
+  if(strlen(cadena) % 2 == 0)
+  {
+    return 1;
+  }
+  
+  return 0;
 }
 
