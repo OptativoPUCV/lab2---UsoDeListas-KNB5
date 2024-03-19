@@ -132,7 +132,7 @@ void copia_pila(Stack* P1, Stack* P2)
 
   while(elemento != NULL)
     {
-      push(P2, elemento);
+      pushFront(P2, elemento);
       elemento = next(P1);
     }
 }
