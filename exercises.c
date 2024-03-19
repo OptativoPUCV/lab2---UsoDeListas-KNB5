@@ -143,7 +143,7 @@ int parentesisBalanceados(char *cadena)
           pushBack(stack, &cadena[j]);
         }
 
-      char *elemento = (char *) first(stack);
+      char *elemento = (char *) top(stack);
 
       for(int k = 0; k < largo; k++)
         {
