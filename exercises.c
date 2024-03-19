@@ -155,6 +155,7 @@ int parentesisBalanceados(char *cadena)
   return 1;*/
   
   Stack* P1 = create_stack();
+  Stack* P2 = create_stack();
   int i, j;
   int largo = strlen(cadena);
   if (largo % 2 == 1) return 0;
@@ -195,6 +196,5 @@ int parentesisBalanceados(char *cadena)
             }
         }
     }
-  if(get_size(P1) == 0) return 1;
-  else return 0;
+  return 1;
 }
