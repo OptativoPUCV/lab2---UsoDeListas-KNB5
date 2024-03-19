@@ -41,9 +41,41 @@ debes reservar memoria para cada elemento que agregues.
 Al finalizar retorna la lista creada.
 */
 
-List* crea_lista() {
-   List* L = create_list();
-   return L;
+List* crea_lista() 
+{
+  List* L = create_list();
+  
+  int elemento1 = 1;
+  pushFront(L, &elemento1);
+
+  int elemento2 = 2;
+  pushBack(L, &elemento2);
+
+  int elemento3 = 3;
+  pushFront(L, &elemento3);
+
+  int elemento4 = 4;
+  pushBack(L, &elemento4);
+
+  int elemento5 = 5;
+  pushFront(L, &elemento5);
+
+  int elemento6 = 6;
+  pushBack(L, &elemento6);
+
+  int elemento7 = 7;
+  pushFront(L, &elemento7);
+
+  int elemento8 = 8;
+  pushBack(L, &elemento8);
+
+  int elemento9 = 9;
+  pushFront(L, &elemento9);
+
+  int elemento10 = 10;
+  pushBack(L, &elemento10);
+  
+  return L;
 }
 
 /*
