@@ -150,26 +150,24 @@ int parentesisBalanceados(char *cadena)
           switch(*elemento)
             {
               case '(':
-                if(*(char*)top(stack) != ')')
+                if(*(char*)pop(stack) != ')')
                 {
                   return 0;
                 }
                 break;
               case '{':
-                if(*(char*)top(stack) != '}')
+                if(*(char*)pop(stack) != '}')
                 {
                   return 0;
                 }
                 break;
               case '[':
-                if(*(char*)top(stack) != ']')
+                if(*(char*)pop(stack) != ']')
                 {
                   return 0;
                 }
                 break;
             }
-          elemento = next(stack);
-          pop(stack);
         }
     }
   return 1;
