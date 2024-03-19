@@ -115,3 +115,9 @@ exercises.c:177:7: error: unused variable ‘cont’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c788941
+Tue 19 Mar 2024 03:30:06 PM UTC: 
+ exercises.c | 44 --------------------------------------------
+ 1 file changed, 44 deletions(-)
+ tests:  4|1
+total_score: 50/70
+d3d6a44
