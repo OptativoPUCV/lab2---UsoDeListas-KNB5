@@ -44,8 +44,13 @@ Al finalizar retorna la lista creada.
 List* crea_lista() 
 {
   List* L = create_list();
+  int i;
+
+  for (i = 1; i <= 10; i++){
+    pushBack(L, &i);
+  }
   
-  int elemento1 = 1;
+  /*int elemento1 = 1;
   pushFront(L, &elemento1);
 
   int elemento2 = 2;
@@ -73,7 +78,7 @@ List* crea_lista()
   pushFront(L, &elemento9);
 
   int elemento10 = 10;
-  pushBack(L, &elemento10);
+  pushBack(L, &elemento10);*/
   
   return L;
 }
@@ -156,7 +161,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 int parentesisBalanceados(char *cadena) 
 {
   int i, j;
-
 
   int largo = strlen(cadena);
 
