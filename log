@@ -41,3 +41,9 @@ test.c:100:17: error: implicit declaration of function ‘sumaLista’ [-Werror=
 cc1: all warnings being treated as errors
 Compilation failed
 02b6493
+Tue 19 Mar 2024 02:55:51 PM UTC: 
+ exercises.c | 12 +++---------
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+ tests:  1|4
+total_score: 10/70
+1f35449
