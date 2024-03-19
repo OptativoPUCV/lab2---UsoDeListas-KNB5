@@ -172,7 +172,7 @@ int parentesisBalanceados(char *cadena)
           pop(stack);
         }
     }
-}
+  return 1;
   
 
   
@@ -198,5 +198,5 @@ int parentesisBalanceados(char *cadena)
       
     }
   }
-  return 1;
-}*/
+  return 1;*/
+}
