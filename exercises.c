@@ -158,12 +158,14 @@ int parentesisBalanceados(char *cadena)
   int i;
 
   int largo = strlen(cadena);
+  int mitad = largo / 2;
+  if (largo % 2 == 1) mitad++;
 
-  for (i = 0; i < (largo / 2); i++){
+  for (i = 0; i < mitad; i++){
     if (cadena[i] != '(' || cadena[i] != '{') return 0;
   }
 
-  for (i = (largo / 2) ; cadena[i] != '\0'; i++){
+  for (i = mitad ; cadena[i] != '\0'; i++){
     if (cadena[i] != ')' || cadena[i] != '}') return 0;
   }
   
