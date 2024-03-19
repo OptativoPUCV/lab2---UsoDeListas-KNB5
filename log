@@ -15,3 +15,12 @@ exercises.c:96:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 3765196
+Tue 19 Mar 2024 02:52:32 PM UTC: 
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:96:1: error: control reaches end of non-void function [-Werror=return-type]
+   96 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+b1a71e4
